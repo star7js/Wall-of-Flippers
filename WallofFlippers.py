@@ -50,7 +50,7 @@ wof_data = { # I just hold important data
 
 
 class FlipperUtils: # meow meow, I dislike this class
-    def __asciiArt__():
+    def __asciiArt__(self):
         print(ascii.replace("[RANDOM_QUOTE]", random.choice(dolphin_thinking)))
     def __convertHowLongAgo__(timey):
         currentTime = int(time.time())
@@ -75,7 +75,7 @@ class FlipperUtils: # meow meow, I dislike this class
         with open('Flipper.json', 'w') as f:
                json.dump(file_data, f, indent=4)
         db.close()
-    def __fancyDisplay__():
+    def __fancyDisplay__(self):
         global wof_data
         db = open('Flipper.json', 'r')
         file_data = json.load(db)
